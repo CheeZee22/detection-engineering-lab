@@ -1,0 +1,30 @@
+title: Encoded PowerShell Command Line
+id: 72e8a595-b26d-433a-8343-44ad1d8f247f
+status: experimental
+description: Detects PowerShell executing encoded commands, a common way to obscure malicious script content.
+reference: 
+    - https://attack.mitre.org/techniques/T10159/001/
+author: Chihiro Tatsukawa
+date: 2026-10-03
+tags:
+    - attack.execution
+    - attack.t1059.001
+logsource: 
+    category: process_creation
+    product: windows
+detection: 
+    selection_img: 
+       Image|endswith:
+           - '\powershell.exe'
+           - '\pwsh.exe'
+    selection_enc: 
+       CommandLine|contains: 
+           - ' -enc '
+           - ' -EncodedCommand '
+           - ' -e '
+           - ' -ec '
+           - ' -en '
+    condition: selection_img and selection_enc
+falsepositives:
+    - Some admin and software deployment tools use encoded command legitimately
+level: medium
