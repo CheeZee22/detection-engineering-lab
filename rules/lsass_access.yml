@@ -1,0 +1,35 @@
+title: Suspicious LSASS Memory Access
+id: ed8b5aa0-f7ca-4e26-8026-1aef27d23f36
+status: experimental
+description: Detects a process opening lsass.exe with access rights that allow reading its memory, a common step in credential dumping.
+references:
+    - https://attack.mitre.org/techniques/T1003/001/
+    - https://www.splunk.com/en_us/blog/security/you-bet-your-lsass-hunting-lsass-access.html
+Author: Chihiro Tatsukawa
+date: 2026-10-03
+tags:
+    - attack.credential-access
+    - attack.t1003.001
+logsource:
+    category: process_access
+    product: windows
+detection:
+    selection_target:
+        TargetImage|endswith: '\lsass.exe'
+    selection_access:
+        GrantedAccess:
+            - '0x01000'
+            - '0x1010'
+            - '0x1038'
+            - '0x40'
+            - '0x1400'
+            - '0x1fffff'
+            - '0x1410'
+            - '0x143a'
+            - '0x1438'
+            - '0x1000'
+    condition: selection_target and selection_access
+falsepositives:
+    - Antivirus and EDR products
+    - System monitoring and backup tools
+level: medium
